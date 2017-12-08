@@ -1,0 +1,3 @@
+select country, name, round(abv, 2) as teor from brejasgeral
+where country in ("Argentina", "Brazil")
+order by teor desc

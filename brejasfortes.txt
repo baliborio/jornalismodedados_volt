@@ -1,0 +1,4 @@
+select country, name, "name:1", cat_name, round(abv, 2) as abvnew,  ibu, style_name  from brejasgeral
+where country in ("Germany", "Belgium", "United Kingdom", "Canada")
+and abvnew between 8 and 40
+order by abv desc

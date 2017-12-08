@@ -1,0 +1,4 @@
+select "name:1", round(avg(abv), 1) as media from brejasgeral
+where abv between 8 and 40
+group by "name:1"
+order by media desc

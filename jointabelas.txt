@@ -1,0 +1,5 @@
+select * from cevas
+natural join categorias
+natural join estilos
+inner join cervejarias
+on cevas.brewery_id = cervejarias.brewery_id

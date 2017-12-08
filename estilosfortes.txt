@@ -1,0 +1,4 @@
+select style_name, round(avg(abv), 1) as media from brejasgeral
+where abv between 8 and 40
+group by "style_name"
+order by media desc
